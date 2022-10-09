@@ -1,0 +1,387 @@
+2022-05-21 16:09:57 ERROR  : ERROR:  column "sb349837797" does not exist
+2022-05-21 16:10:02 ERROR  : ERROR:  column "sb349837797" does not exist
+2022-05-21 16:10:33 ERROR  : ERROR:  column "sb349837797" does not exist
+LINE 12:   FROM pinpoint_document where key ="sb349837797";
+                                             ^
+2022-05-21 16:10:45 ERROR  : ERROR:  column "sb349837797" does not exist
+LINE 12:   FROM pinpoint_document where key == "sb349837797";
+                                               ^
+2022-05-21 16:10:52 ERROR  : ERROR:  operator does not exist: character varying == unknown
+LINE 12:   FROM pinpoint_document where key == 'sb349837797';
+                                            ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2022-05-26 09:56:58 ERROR  : ERROR:  column "vengadesh" does not exist
+LINE 3:     VALUES (1, "vengadesh");
+                       ^
+2022-05-26 09:57:09 ERROR  : ERROR:  malformed array literal: "vengadesh"
+LINE 3:     VALUES (1, 'vengadesh');
+                       ^
+DETAIL:  Array value must start with "{" or dimension information.
+2022-05-26 09:57:22 ERROR  : ERROR:  syntax error at or near "{"
+LINE 3:     VALUES (1, {'vengadesh'});
+                       ^
+2022-05-26 10:01:26 ERROR  : ERROR:  duplicate key value violates unique constraint "sample_pkey"
+DETAIL:  Key (id)=(1) already exists.
+2022-06-08 19:37:54 ERROR  : ERROR:  syntax error at or near ":"
+LINE 1: ... WHERE ORM.status='COMPLETED' AND  ORM.libraryId= :libraryId...
+                                                             ^
+2022-06-08 19:38:33 ERROR  : ERROR:  zero-length delimited identifier at or near """"
+LINE 1: ...M WHERE ORM.status='COMPLETED' AND  ORM.libraryId="" AND ORM...
+                                                             ^
+2022-06-08 19:38:49 ERROR  : ERROR:  column orm.libraryid does not exist
+LINE 1: ...g_rev_merge ORM WHERE ORM.status='COMPLETED' AND  ORM.librar...
+                                                             ^
+2022-06-08 19:39:28 ERROR  : ERROR:  column orm.publicationid does not exist
+LINE 1: ...ORM.status='COMPLETED' AND  ORM.library_id='' AND ORM.public...
+                                                             ^
+2022-06-08 19:39:44 ERROR  : ERROR:  column orm.revison_number does not exist
+LINE 1: ...ORM.library_id='' AND ORM.publication_id = '' AND ORM.reviso...
+                                                             ^
+2022-06-08 19:40:02 ERROR  : ERROR:  invalid input syntax for integer: ""
+LINE 1: ...'' AND ORM.publication_id = '' AND ORM.revision_number='' );
+                                                                  ^
+2022-06-08 19:49:47 ERROR  : ERROR:  column orm.revison_number does not exist
+LINE 3: ...RM.library_id= '' AND ORM.publication_id = '' AND ORM.reviso...
+                                                             ^
+2022-06-09 11:13:06 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: ...ryId='' AND ORM.publicationId = '' AND ORM.revisionNumber=1;
+                                                                      ^
+2022-06-09 11:13:24 ERROR  : ERROR:  null value in column "product_statement_id" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, 567|456|234|234|).
+2022-06-09 11:16:27 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: ...id='' AND ORM.publication_id = '' AND ORM.revision_number=1;
+                                                                      ^
+2022-06-09 11:16:57 ERROR  : ERROR:  syntax error at end of input
+LINE 2: 
+        ^
+2022-06-09 11:17:00 ERROR  : ERROR:  syntax error at end of input
+LINE 2: 
+        ^
+2022-06-09 11:17:05 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: ...PLETED' AND  ORM.library_id='' AND ORM.publication_id = '' ;
+                                                                      ^
+2022-06-09 11:17:18 ERROR  : ERROR:  column orm.id does not exist
+LINE 1: ...rev_merge_doc ORMD WHERE ORMD.merge_id in (SELECT ORM.id fro...
+                                                             ^
+2022-06-09 11:24:13 ERROR  : ERROR:  column "update_time" does not exist
+LINE 1: ...brary_id='' AND ORM.publication_id = '') order by update_tim...
+                                                             ^
+2022-06-09 11:24:36 ERROR  : ERROR:  syntax error at or near "update_time"
+LINE 1: ..._id='' AND ORM.publication_id = '') order by ORMD update_tim...
+                                                             ^
+2022-06-09 11:24:38 ERROR  : ERROR:  syntax error at or near "update_time"
+LINE 1: ..._id='' AND ORM.publication_id = '') order by ORMD update_tim...
+                                                             ^
+2022-06-09 11:24:42 ERROR  : ERROR:  column ormd.update_time does not exist
+LINE 1: ...brary_id='' AND ORM.publication_id = '') order by ORMD.updat...
+                                                             ^
+2022-06-09 11:25:39 ERROR  : ERROR:  column ormd.update_time does not exist
+LINE 1: ...ibrary_id='' AND ORM.publication_id = '' order by ORMD.updat...
+                                                             ^
+2022-06-09 16:29:31 ERROR  : ERROR:  invalid input syntax for integer: "none"
+LINE 6:             1, 'none', 'COMPLETED', now(), now(), 
+                       ^
+2022-06-09 17:05:50 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk2"
+DETAIL:  Key (previous_document_id)=(120) is not present in table "pinpoint_document".
+2022-06-09 17:06:25 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk3"
+DETAIL:  Key (current_document_id)=(134) is not present in table "pinpoint_document".
+2022-06-09 17:06:36 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk4"
+DETAIL:  Key (authored_document_id)=(1) is not present in table "pinpoint_document".
+2022-06-09 17:06:46 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk5"
+DETAIL:  Key (draft_document_id)=(1) is not present in table "pinpoint_user_document".
+2022-06-09 17:06:58 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk5"
+DETAIL:  Key (draft_document_id)=(1) is not present in table "pinpoint_user_document".
+2022-06-09 17:07:06 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk5"
+DETAIL:  Key (draft_document_id)=(23) is not present in table "pinpoint_user_document".
+2022-06-09 17:13:37 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk5"
+DETAIL:  Key (draft_document_id)=(10) is not present in table "pinpoint_user_document".
+2022-06-09 17:16:48 ERROR  : ERROR:  duplicate key value violates unique constraint "pinpoint_org_rev_merge_doc_pkey"
+DETAIL:  Key (merge_id, key)=(1, 27) already exists.
+2022-06-09 17:17:00 ERROR  : ERROR:  syntax error at or near "33"
+LINE 4:     VALUES (1, 31, 32 33, 34, 
+                              ^
+2022-06-09 17:17:08 ERROR  : ERROR:  syntax error at or near "35"
+LINE 4:     VALUES (1, 31, 32 35, 34, 
+                              ^
+2022-06-09 17:23:59 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk5"
+DETAIL:  Key (draft_document_id)=(12) is not present in table "pinpoint_user_document".
+2022-06-09 17:24:14 ERROR  : ERROR:  insert or update on table "pinpoint_org_rev_merge_doc" violates foreign key constraint "pinpoint_org_rev_merge_doc_fk5"
+DETAIL:  Key (draft_document_id)=(15) is not present in table "pinpoint_user_document".
+2022-06-09 18:20:34 ERROR  : ERROR:  column "created_time" does not exist
+LINE 1: ...ORM.library_id='' AND ORM.publication_id = '' and created_ti...
+                                                             ^
+2022-06-09 19:46:21 ERROR  : ERROR:  column "created_time" does not exist
+LINE 1: ...='lib_id2' AND ORM.publication_id = 'pub_id2' and created_ti...
+                                                             ^
+2022-06-09 19:46:35 ERROR  : ERROR:  column orm.created_time does not exist
+LINE 1: ...='lib_id2' AND ORM.publication_id = 'pub_id2' and ORM.create...
+                                                             ^
+2022-06-10 10:35:13 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 2:   FROM pinpoint_org_rev_merge where id in(1,2) order by upda...
+          ^
+2022-06-10 10:35:21 ERROR  : ERROR:  column "id" does not exist
+LINE 2:   FROM pinpoint_org_rev_merge where id in(1,2) order by upda...
+                                            ^
+2022-06-14 19:54:51 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 2: ...ragment where fragment_id in(SELECT  fragment_id, FROM pinpo...
+                                                             ^
+2022-06-14 19:54:59 ERROR  : ERROR:  syntax error at or near ")"
+LINE 2: ...agment where user_group='' and user_group_organization=''));
+                                                                     ^
+2022-06-14 19:55:25 ERROR  : ERROR:  syntax error at or near ")"
+LINE 2: ..._group='Ba-admin' and user_group_organization='ROLLSROYS'));
+                                                                     ^
+2022-06-14 22:49:10 ERROR  : ERROR:  syntax error at or near ";"
+LINE 2: ...Ba-admin' and user_group_organization in('ROLLSROYS','SYS');
+                                                                      ^
+2022-06-14 23:17:30 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 4 other sessions using the database.
+2022-06-16 19:48:11 ERROR  : ERROR:  duplicate key value violates unique constraint "pinpoint_useraccess_restricted_fragm_fragment_id_user_group_key"
+DETAIL:  Key (fragment_id, user_group)=(1, rr-admin-group) already exists.
+2022-06-17 19:23:44 ERROR  : ERROR:  duplicate key value violates unique constraint "pinpoint_useraccess_restricted_fragm_fragment_id_user_group_key"
+DETAIL:  Key (fragment_id, user_group)=(1, RR-Admin-Group) already exists.
+2022-06-17 19:23:47 ERROR  : ERROR:  duplicate key value violates unique constraint "pinpoint_useraccess_restricted_fragm_fragment_id_user_group_key"
+DETAIL:  Key (fragment_id, user_group)=(1, RR-Admin-Group) already exists.
+2022-06-17 19:23:56 ERROR  : ERROR:  duplicate key value violates unique constraint "pinpoint_useraccess_restricted_fragm_fragment_id_user_group_key"
+DETAIL:  Key (fragment_id, user_group)=(1, RR-Admin-Group) already exists.
+2022-06-20 19:07:31 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 22 other sessions using the database.
+2022-06-20 19:07:53 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 22 other sessions using the database.
+2022-06-29 11:47:22 ERROR  : ERROR:  duplicate key value violates unique constraint "idx_pinpoint_useraccess_restricted_fragment"
+DETAIL:  Key (user_group, user_group_organization)=(rr-admin-group, N4701) already exists.
+2022-06-29 11:47:28 ERROR  : ERROR:  duplicate key value violates unique constraint "idx_pinpoint_useraccess_restricted_fragment"
+DETAIL:  Key (user_group, user_group_organization)=(rr-admin-group, N4701) already exists.
+2022-06-29 11:47:35 ERROR  : ERROR:  duplicate key value violates unique constraint "idx_pinpoint_useraccess_restricted_fragment"
+DETAIL:  Key (user_group, user_group_organization)=(rr-admin-group, N4701) already exists.
+2022-06-29 11:48:51 ERROR  : ERROR:  duplicate key value violates unique constraint "idx_pinpoint_useraccess_restricted_fragment"
+DETAIL:  Key (user_group, user_group_organization)=(rr-admin-group, N4701) already exists.
+2022-06-29 12:18:27 ERROR  : ERROR:  duplicate key value violates unique constraint "idx_pinpoint_useraccess_restricted_fragment"
+DETAIL:  Key (user_group, user_group_organization)=(rr-admin-group, N4701) already exists.
+2022-06-29 12:23:03 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 23 other sessions using the database.
+2022-07-01 20:48:51 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2022-07-05 15:51:45 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+2022-07-05 15:54:51 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+2022-07-05 15:55:13 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+2022-07-05 19:06:42 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-07-05 19:06:57 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-07-06 13:11:50 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+2022-07-07 19:45:35 ERROR  : ERROR:  column "pinpoint_document_revision.document_id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select * from pinpoint_document_revision group by revision_n...
+               ^
+2022-07-07 19:46:47 ERROR  : ERROR:  column "pinpoint_document_revision.document_id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select document_id from pinpoint_document_revision group by ...
+               ^
+2022-07-07 19:47:44 ERROR  : ERROR:  column "pinpoint_document_revision.document_id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select document_id, count(document_id) from pinpoint_documen...
+               ^
+2022-07-07 19:48:47 ERROR  : ERROR:  column "pinpoint_document_revision.document_id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 3: select count(*), document_id from pinpoint_document_revision...
+                         ^
+2022-07-07 19:49:31 ERROR  : ERROR:  column "pinpoint_document_revision.document_id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 3: select revision_number, document_id from pinpoint_document_r...
+                                ^
+2022-07-07 19:51:48 ERROR  : ERROR:  column "docunent_id" does not exist
+LINE 1: ...ument_id from pinpoint_document_revision group by docunent_i...
+                                                             ^
+2022-07-07 19:53:18 ERROR  : ERROR:  column "pinpoint_document_revision.document_id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select count(revision_number), document_id from pinpoint_doc...
+                                       ^
+2022-07-07 19:54:08 ERROR  : ERROR:  relation "pinpoint_document_revisoin" does not exist
+LINE 1: select * from pinpoint_document_revisoin;
+                      ^
+2022-07-12 16:40:33 ERROR  : ERROR:  syntax error at or near "where"
+LINE 1: ...document pd inner join pinpoint_user_document pud where pud....
+                                                             ^
+2022-07-12 16:41:13 ERROR  : ERROR:  syntax error at or near "pud"
+LINE 1: ...brary_id ='2de122fc-0d0f-4aab-8dc1-7f3df4465195'  pud.revisi...
+                                                             ^
+2022-07-12 16:41:37 ERROR  : ERROR:  column reference "key" is ambiguous
+LINE 1: select key from pinpoint_document pd inner join pinpoint_use...
+               ^
+2022-07-12 16:41:45 ERROR  : ERROR:  column reference "library_id" is ambiguous
+LINE 1: select library_id from pinpoint_document pd inner join pinpo...
+               ^
+2022-07-12 16:43:28 ERROR  : ERROR:  column pud.status does not exist
+LINE 1: ...document pud on pud.library_id =pd.library_id and pud.status...
+                                                             ^
+2022-07-12 16:48:48 ERROR  : ERROR:  column pd.id does not exist
+LINE 1: select pd.id,pd.library_id,pd.key,pd.change_status from pinp...
+               ^
+2022-07-14 19:03:43 ERROR  : ERROR:  relation "pinpoint_useraceess_restricted_fragment" does not exist
+LINE 4:   and fragment_id in(select purf.fragmentId from pinpoint_us...
+                                                         ^
+2022-07-14 19:04:18 ERROR  : ERROR:  relation "pinpoint_useraccess_restricted_fragment" does not exist
+LINE 4:   and fragment_id in(select purf.fragmentId from pinpoint_us...
+                                                         ^
+2022-07-14 19:04:29 ERROR  : ERROR:  column purf.fragmentid does not exist
+LINE 4:   and fragment_id in(select purf.fragmentId from pinpoint.pi...
+                                    ^
+2022-07-14 19:49:20 ERROR  : ERROR:  invalid input syntax for integer: "aa-viewers-group"
+LINE 3: ..._restricted_fragment purf on purf.fragment_id in ('aa-viewer...
+                                                             ^
+2022-07-14 19:51:22 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 3: prf.document_key,  FROM pinpoint.pinpoint_restricted_fragmen...
+                           ^
+2022-07-14 20:04:39 ERROR  : ERROR:  relation "pinpoint_useraccess_restricted_fragment" does not exist
+LINE 2: ... pinpoint.pinpoint_restricted_fragment inner join pinpoint_u...
+                                                             ^
+2022-07-14 20:41:40 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2022-07-18 10:57:59 ERROR  : ERROR:  syntax error at or near "-"
+LINE 2:   FROM pinpoint.pinpoint_transaction_log-;
+                                                ^
+2022-07-18 16:41:47 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2022-07-18 17:42:52 ERROR  : ERROR:  column "update" does not exist
+LINE 3:   FROM pinpoint.pinpoint_transaction_log order by update des...
+                                                          ^
+2022-07-18 17:44:37 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2022-07-18 19:28:33 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2022-07-26 18:16:14 ERROR  : ERROR:  syntax error at or near "innner"
+LINE 1: select * from pinpoint_document pd innner join pinpoint_docu...
+                                           ^
+2022-07-26 18:20:10 ERROR  : ERROR:  syntax error at or near ";"
+LINE 3: ...ull || pd.hasBeenModifiedBy not like  '%' + 'N4701' + '%'));
+                                                                      ^
+2022-07-26 18:20:32 ERROR  : ERROR:  column pd.ismodificationfor does not exist
+LINE 3:  (pd.isModificationFor='N4701' || (pd.isModificationFor =nul...
+          ^
+2022-07-26 18:21:12 ERROR  : ERROR:  operator is not unique: unknown + unknown
+LINE 3: ..._by=null || pd.has_been_modified_by not like  '%' + 'N4701' ...
+                                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+2022-07-26 18:22:58 ERROR  : ERROR:  operator is not unique: unknown + unknown
+LINE 3: ..._by=null || pd.has_been_modified_by not like  '%' + 'N4701' ...
+                                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+2022-07-26 18:23:14 ERROR  : ERROR:  operator does not exist: boolean !~~ unknown
+LINE 3: ..._been_modified_by=null || pd.has_been_modified_by not like  ...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2022-07-26 18:23:35 ERROR  : ERROR:  syntax error at or near "pd"
+LINE 3: ...for =null && (pd.has_been_modified_by=null || not pd.has_bee...
+                                                             ^
+2022-07-26 18:23:58 ERROR  : ERROR:  operator does not exist: boolean !~~ unknown
+LINE 3: ..._been_modified_by=null || pd.has_been_modified_by NOT LIKE  ...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2022-07-26 18:24:13 ERROR  : ERROR:  operator does not exist: character varying = boolean
+LINE 3: ...modification_for =null && (pd.has_been_modified_by=null || p...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2022-07-26 18:25:48 ERROR  : ERROR:  syntax error at or near "innner"
+LINE 1: select * from pinpoint_document pd innner join pinpoint_docu...
+                                           ^
+2022-07-26 23:04:28 ERROR  : ERROR:  syntax error at or near "on"
+LINE 1: ...nt pd Natural join pinpoint_document_revision pdr on pd.docu...
+                                                             ^
+2022-08-01 14:49:48 ERROR  : ERROR:  type "status" does not exist
+2022-08-05 11:41:16 ERROR  : ERROR:  column "libraryid" does not exist
+2022-08-05 18:30:34 ERROR  : ERROR:  syntax error at or near ""= ""
+2022-08-05 18:30:42 ERROR  : ERROR:  column "0236a1e9-a3dd-4fba-b331-2672b30f3013" does not exist
+2022-08-05 18:30:57 ERROR  : ERROR:  column "0236a1e9-a3dd-4fba-b331-2672b30f3013" does not exist
+2022-08-08 10:58:19 ERROR  : ERROR:  syntax error at or near "null"
+2022-08-08 10:58:38 ERROR  : ERROR:  syntax error at or near "isNotNull"
+2022-08-22 21:32:21 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 4 other sessions using the database.
+2022-08-23 10:42:40 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-08-23 10:42:54 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-08-23 10:43:24 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-08-23 10:43:34 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-08-23 10:45:49 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-08-23 10:46:37 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-08-24 17:59:02 ERROR  : ERROR:  null value in column "locked" violates not-null constraint
+DETAIL:  Failing row contains (1, null, 2022-08-24 17:35:16.876, ZUCI-5CD1090HK8 (10.108.74.32)).
+2022-08-24 17:59:10 ERROR  : ERROR:  null value in column "locked" violates not-null constraint
+DETAIL:  Failing row contains (1, null, 2022-08-24 17:35:16.876, ZUCI-5CD1090HK8 (10.108.74.32)).
+2022-08-24 19:59:41 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2022-08-25 11:06:13 ERROR  : ERROR:  schema "acm" does not exist
+2022-08-25 11:06:21 ERROR  : ERROR:  schema "acm" does not exist
+2022-08-25 11:06:41 ERROR  : ERROR:  schema "acm" does not exist
+2022-08-25 11:09:23 ERROR  : ERROR:  relation "acm_license" already exists
+2022-09-06 15:15:03 ERROR  : ERROR:  column "docuemnt_id" does not exist
+LINE 2:  WHERE docuemnt_id = 194;
+               ^
+2022-09-06 15:15:11 ERROR  : ERROR:  update or delete on table "pinpoint_document" violates foreign key constraint "pinpoint_document_revision_fk1" on table "pinpoint_document_revision"
+DETAIL:  Key (document_id)=(194) is still referenced from table "pinpoint_document_revision".
+2022-09-06 15:15:51 ERROR  : ERROR:  update or delete on table "pinpoint_document" violates foreign key constraint "pinpoint_graphic_fk1" on table "pinpoint_graphic"
+DETAIL:  Key (document_id)=(194) is still referenced from table "pinpoint_graphic".
+2022-09-06 15:15:59 ERROR  : ERROR:  update or delete on table "pinpoint_graphic" violates foreign key constraint "pinpoint_graphic_revision_fk1" on table "pinpoint_graphic_revision"
+DETAIL:  Key (graphic_id)=(383) is still referenced from table "pinpoint_graphic_revision".
+2022-09-06 15:16:07 ERROR  : ERROR:  column "document_id" does not exist
+LINE 2:  WHERE document_id = 194;
+               ^
+2022-09-15 12:26:31 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2022-09-15 12:26:45 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2022-09-15 12:27:06 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2022-09-15 12:27:37 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2022-09-15 12:27:57 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2022-09-15 12:28:40 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-15 12:28:44 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-20 18:07:57 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-20 18:08:00 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-21 13:21:54 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-21 13:22:04 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-26 15:52:43 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-26 15:52:45 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-26 22:37:38 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-26 22:37:41 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-28 12:19:07 ERROR  : ERROR:  syntax error at or near "id"
+LINE 1: id=?, locke
+        ^
+2022-09-28 12:23:47 ERROR  : ERROR:  syntax error at or near "*"
+LINE 1: DELETE * FROM acm_license
+               ^
+2022-09-28 12:24:43 ERROR  : ERROR:  syntax error at or near "select"
+LINE 3:  select * from acm_license where license_id =1;
+         ^
+2022-09-29 16:08:00 ERROR  : Column not found in pgSet: rolcatupdate
+2022-09-29 16:08:02 ERROR  : Column not found in pgSet: rolcatupdate
+2022-10-03 13:57:21 ERROR  : Column not found in pgSet: rolcatupdate
+2022-10-03 13:57:26 ERROR  : Column not found in pgSet: rolcatupdate
+2022-10-03 15:54:50 ERROR  : ERROR:  column "Data Manager://application" does not exist
+2022-10-03 15:54:58 ERROR  : ERROR:  column "Data Manager\://application" does not exist
+2022-10-03 15:55:04 ERROR  : ERROR:  column "Data Manager\://application" does not exist
+2022-10-03 16:08:32 ERROR  : ERROR:  unterminated quoted string at or near "'%Data Manager\://application%'
+2022-10-03 16:08:46 ERROR  : ERROR:  unterminated quoted string at or near "'"
+2022-10-03 16:09:08 ERROR  : ERROR:  unterminated quoted string at or near "'"
+2022-10-03 16:09:21 ERROR  : ERROR:  unterminated quoted string at or near "'%Data Manager\://application%'
+2022-10-03 16:09:36 ERROR  : ERROR:  unterminated quoted string at or near "'Data Manager\://application'
+2022-10-03 16:09:42 ERROR  : ERROR:  unterminated quoted string at or near "'Data Manager\://application'
+2022-10-03 16:09:51 ERROR  : ERROR:  unterminated quoted string at or near "'Data Manager\://application'
+2022-10-03 16:09:57 ERROR  : ERROR:  unterminated quoted string at or near "''
+2022-10-03 16:15:53 ERROR  : ERROR:  unterminated quoted string at or near "'%Data Manager\://application%'
+2022-10-05 19:47:54 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+2022-10-05 19:48:22 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+2022-10-06 00:32:26 ERROR  : ERROR:  database "ppdb" is being accessed by other users
+DETAIL:  There is 1 other session using the database.

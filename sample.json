@@ -1,0 +1,19 @@
+{
+    "shoppingBasketType": "internal",
+    "shoppingBasketDetails": {
+        "print": {
+            "layout": "portrait",
+            "pageFormat": "a4",
+            "margin": 1,
+            "unitOfMeasure": "in"
+        },
+        "view": {
+            "columns": [
+                "itemPnr",
+                "itemDesc",
+                "itemMfr",
+                "itemQty"
+            ]
+        }
+    }
+}

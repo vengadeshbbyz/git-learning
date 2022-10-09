@@ -1,0 +1,31 @@
+{
+   "drafts":[
+                {
+                    "documentId": 2,
+                    "key":"task-700000100101",
+                    "ncage":"N4701",
+                    "title":"Task 70-00-00-100-101 - Overhaul Process 101 - Non-Aqueous Vapour and Liquid Degreasing",
+                    "username": "rr-admin",
+                    "status": "APPROVED",
+                    "createTime": "Jul 26, 2022",
+                    "updateTime": "Jul 26, 2022",
+                    "comments" : "[{\"action\":\"IN_REVIEW\",\"comment\":\"\",\"username\":\"rr-admin\",\"timestamp\":\"2022-07-26 14:19:18:800\"},{\"action\":\"APPROVED\",\"comment\":\"\",\"username\":\"rr-admin\",\"timestamp\":\"2022-07-26 14:19:26:481\"}]",
+                    "approvedBy":"rr-admin",
+                    "approvedDate": "2022-07-26 14:19:26.481"
+                }
+                ,
+                {
+                    "documentId": 3,
+                    "key":"task-700000100102",
+                    "ncage":"N4701",
+                    "title":"Task 70-00-00-100-102 - Overhaul Process 102 - Primary Cleaning - Aqueous",
+                    "username": "rr-admin",
+                    "status": "APPROVED",
+                    "createTime": "Jul 26, 2022",
+                    "updateTime": "Jul 26, 2022",
+                    "comments" : "[{\"action\":\"IN_REVIEW\",\"comment\":\"\",\"username\":\"rr-admin\",\"timestamp\":\"2022-07-26 14:20:35:044\"},{\"action\":\"APPROVED\",\"comment\":\"\",\"username\":\"rr-admin\",\"timestamp\":\"2022-07-26 14:20:37:336\"}]",
+                    "approvedBy":"rr-admin",
+                    "approvedDate": "2022-07-26 14:20:37.337"
+                }
+                    ]
+}
